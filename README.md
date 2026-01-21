@@ -1,6 +1,6 @@
 # IFIP119-22nd-CryptoMining-Detection-Minimal-Demo
 <div align="center">
-中文 | [English](./readme_en.md)
+中文 | [English](readme_en.md)
 </div>
 
 该项目是"Cryptomining Traffic Detection via Statistical Filtering and Deep Learning" (IFIP WG 11.9, 22nd) 中挖矿木马检测方法最小系统样例，用于促进相关研究。项目包含以下部分：
