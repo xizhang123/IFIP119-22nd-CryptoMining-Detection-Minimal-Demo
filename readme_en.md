@@ -1,6 +1,8 @@
 # IFIP119-22nd-CryptoMining-Detection-Minimal-Demo
 <div align="center">
+    
 [中文](README.md) | English
+
 </div>
 
 This project is a minimal system example of the cryptomining malware detection method from "Cryptomining Traffic Detection via Statistical Filtering and Deep Learning" (IFIP WG 11.9, 22nd), intended to facilitate related research. The project includes the following parts:
