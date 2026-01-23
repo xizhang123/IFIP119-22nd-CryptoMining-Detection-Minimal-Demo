@@ -75,5 +75,6 @@ Contains two parts: Statistical Filtering Model (LSSVM) and Precise Detection Mo
 - TELSTM Model Weights: lstm_classifier.weight
 
 ### Complete Serial Detection Process
-- pcap->metedada: 01_metadata_extract.ipynb
-- detection: 02_mining_detection.ipynb
+- traffic.pcap->metedada.csv：01_metadata_extract.ipynb
+- metedada.csv->pool black list: 02_mining_detection.ipynb
+- faster detection: 03_random_sample.ipynb

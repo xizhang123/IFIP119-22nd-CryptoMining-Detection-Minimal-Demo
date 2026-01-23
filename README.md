@@ -69,5 +69,6 @@
 - LSSVM模型权重：parameter2.npz
 - TELSTM模型权重：lstm_classifier.weight
 ### 完整的串联检测流程
-- pcap->metedada：01_metadata_extract.ipynb
-- detection: 02_mining_detection.ipynb
+- traffic.pcap->metedada.csv：01_metadata_extract.ipynb
+- metedada.csv->pool black list: 02_mining_detection.ipynb
+- faster detection: 03_random_sample.ipynb
