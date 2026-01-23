@@ -6,9 +6,11 @@
 #include <string>
 
 FILE* file;
-// extract metadata
 void packet_handler(unsigned char* user_data, const struct pcap_pkthdr* pkthdr, const unsigned char* packet) {
-    if (packet[12] == 0x08 && packet[13] == 0x00 && packet[23] == 0x06) {
+    if (packet[0] == 0x45 || (packet[12] == 0x08 && packet[13] == 0x00 && packet[23] == 0x06)) {
+        if (packet[0] == 0x45) { //only ip segment without frame head
+            packet = packet - 14;
+        }
         int total_len = (packet[16] << 8) + packet[17];
         int ip_head = (packet[14] & 0xF) * 4;
         int payload = total_len - ip_head - (packet[ip_head + 26] >> 4) * 4;
